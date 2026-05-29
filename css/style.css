@@ -3,7 +3,6 @@
    Module: WEDE5020 - Web Development (Introduction)
    ============================================================ */
 
-
 /* ============================================================
    1. Removes default browser margins and padding to ensure
    consistent styling across all browsers.
@@ -15,7 +14,6 @@
   box-sizing: border-box;
 }
 
-
 /* ============================================================
    2. DEFAULT BODY STYLES
    ============================================================ */
@@ -24,30 +22,45 @@ body {
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
-    color: #1A1A2E;
-    background-color: #F8F9FB;
+  color: #1a1a2e;
+  background-color: #f8f9fb;
 }
-
 
 /* ============================================================
    3. Styles all heading levels using the primary navy blue colour.
    ============================================================ */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Arial, sans-serif;
   font-weight: 700;
-    color: #1E3A5F;
+  color: #1e3a5f;
   margin-bottom: 0.75rem;
   line-height: 1.2;
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.5rem; }
-h4 { font-size: 1.2rem; }
-h5 { font-size: 1rem; }
-h6 { font-size: 0.9rem; }
-
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.2rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.9rem;
+}
 
 /* ============================================================
    4. Set readable font size, spacing, and colour for body text.
@@ -56,17 +69,17 @@ h6 { font-size: 0.9rem; }
 p {
   font-size: 1rem;
   line-height: 1.7;
-    color: #5A6478;
+  color: #5a6478;
   margin-bottom: 1rem;
 }
 
 a {
-    color: #1E3A5F;
+  color: #1e3a5f;
   text-decoration: none;
 }
 
 a:hover {
-    color: #D4A800;
+  color: #d4a800;
 }
 
 strong {
@@ -111,7 +124,9 @@ nav ul li a {
   font-weight: 500;
   padding: 0.3rem 0;
   border-bottom: 2px solid transparent;
-  transition: border-color 0.2s ease, color 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
 }
 
 /* Hover and active pseudo-class on nav links */
@@ -196,7 +211,7 @@ footer p {
    ============================================================ */
 
 .hero {
-  background-image: url('../Images/index_hero.png');
+  background-image: url("../Images/index_hero.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -251,7 +266,6 @@ footer p {
    ============================================================ */
 
 @media (max-width: 768px) {
-
   /* Stack header items vertically */
   header {
     flex-direction: column;
@@ -268,9 +282,15 @@ footer p {
   }
 
   /* Scale down headings */
-  h1 { font-size: 2rem; }
-  h2 { font-size: 1.6rem; }
-  h3 { font-size: 1.3rem; }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
 
   /* Reduce main padding */
   main {
@@ -296,11 +316,16 @@ footer p {
    ============================================================ */
 
 @media (max-width: 480px) {
-
   /* Reduce heading sizes for small screens */
-  h1 { font-size: 1.6rem; }
-  h2 { font-size: 1.4rem; }
-  h3 { font-size: 1.2rem; }
+  h1 {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
 
   p {
     font-size: 0.95rem;
@@ -360,67 +385,67 @@ footer p {
 
 /* Team section wraps all four cards in a responsive grid */
 .team-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-    margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
 /* Individual team card */
 .team-card {
-    background-color: #ffffff;
-    border: 1px solid #e2e7ef;
-    border-radius: 8px;
-    overflow: hidden;
-    text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #e2e7ef;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
 }
 
 /* Portrait area at the top of each card */
 .team-card .portrait {
-    background-color: #1e3a5f;
-    height: 220px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #1e3a5f;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* If a real photo is added it fills the portrait area */
 .team-card .portrait img {
-    width: 100%;
-    height: 220px;
-    object-fit: contain;
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
 }
 
 /* Placeholder icon shown when no photo is available */
 .team-card .portrait-placeholder {
-    font-size: 4rem;
-    color: #f5c518;
+  font-size: 4rem;
+  color: #f5c518;
 }
 
 /* Card text content below the portrait */
 .team-card .team-info {
-    padding: 1.2rem 1rem;
+  padding: 1.2rem 1rem;
 }
 
 .team-card .team-info h3 {
-    margin-bottom: 0.25rem;
-    font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  font-size: 1.1rem;
 }
 
 /* Job title in yellow */
 .team-card .team-info .role {
-    color: #f5c518;
-    font-size: 0.82rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    margin-bottom: 0.75rem;
+  color: #f5c518;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.75rem;
 }
 
 .team-card .team-info p {
-    font-size: 0.88rem;
-    color: #5a6478;
-    margin: 0;
+  font-size: 0.88rem;
+  color: #5a6478;
+  margin: 0;
 }
 
 /* ============================================================
@@ -428,11 +453,10 @@ footer p {
    ============================================================ */
 
 @media (max-width: 768px) {
-
-    /* Two columns on tablet */
-    .team-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  /* Two columns on tablet */
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ============================================================
@@ -440,9 +464,306 @@ footer p {
    ============================================================ */
 
 @media (max-width: 480px) {
+  /* Single column on mobile */
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
-    /* Single column on mobile */
-    .team-grid {
-        grid-template-columns: 1fr;
-    }
+/* ============================================================
+   Enquiry Page - enquiry.html
+   Styles for the enquiry form, fieldsets, inputs,
+   dropdowns, textarea, and submit button.
+   ============================================================ */
+
+/* --- Fieldset and legend --- */
+
+fieldset {
+  border: 1px solid #e2e7ef;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #ffffff;
+}
+
+legend {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #1e3a5f;
+  padding: 0 0.5rem;
+  letter-spacing: 0.03em;
+}
+
+/* --- Labels --- */
+
+label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1e3a5f;
+  margin-top: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+/* --- Text inputs, email, tel --- */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 0.6rem 0.85rem;
+  border: 1.5px solid #e2e7ef;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  color: #1a1a2e;
+  background-color: #f8f9fb;
+  transition: border-color 0.2s ease;
+}
+
+/* Focus pseudo-class highlights the active input */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+  border-color: #1e3a5f;
+  outline: none;
+  background-color: #ffffff;
+}
+
+/* --- Select dropdowns --- */
+
+select {
+  width: 100%;
+  padding: 0.6rem 0.85rem;
+  border: 1.5px solid #e2e7ef;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  color: #1a1a2e;
+  background-color: #f8f9fb;
+  transition: border-color 0.2s ease;
+}
+
+select:focus {
+  border-color: #1e3a5f;
+  outline: none;
+  background-color: #ffffff;
+}
+
+/* --- Textarea --- */
+
+textarea {
+  width: 100%;
+  padding: 0.6rem 0.85rem;
+  border: 1.5px solid #e2e7ef;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  color: #1a1a2e;
+  background-color: #f8f9fb;
+  resize: vertical;
+  transition: border-color 0.2s ease;
+}
+
+textarea:focus {
+  border-color: #1e3a5f;
+  outline: none;
+  background-color: #ffffff;
+}
+
+/* --- Submit button --- */
+
+input[type="submit"] {
+  background-color: #f5c518;
+  color: #1e3a5f;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #d4a800;
+}
+
+/* --- Ordered list in what happens next section --- */
+
+section ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+section ol li {
+  color: #5a6478;
+  line-height: 1.7;
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
+/* ============================================================
+   Enquiry Page - Responsive (Mobile)
+   ============================================================ */
+
+@media (max-width: 480px) {
+  fieldset {
+    padding: 1rem;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+  }
+}
+
+/* ============================================================
+   Enquiry Page - enquiry.html
+   Styles for the enquiry form, fieldsets, inputs,
+   dropdowns, textarea, and submit button.
+   ============================================================ */
+
+/* --- Fieldset and legend --- */
+
+fieldset {
+  border: 1px solid #e2e7ef;
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #ffffff;
+}
+
+legend {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #1e3a5f;
+  padding: 0 0.5rem;
+  letter-spacing: 0.03em;
+}
+
+/* --- Labels --- */
+
+label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1e3a5f;
+  margin-top: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+/* --- Text inputs, email, tel --- */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 0.6rem 0.85rem;
+  border: 1.5px solid #e2e7ef;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  color: #1a1a2e;
+  background-color: #f8f9fb;
+  transition: border-color 0.2s ease;
+}
+
+/* Focus pseudo-class highlights the active input */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+  border-color: #1e3a5f;
+  outline: none;
+  background-color: #ffffff;
+}
+
+/* --- Select dropdowns --- */
+
+select {
+  width: 100%;
+  padding: 0.6rem 0.85rem;
+  border: 1.5px solid #e2e7ef;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  color: #1a1a2e;
+  background-color: #f8f9fb;
+  transition: border-color 0.2s ease;
+}
+
+select:focus {
+  border-color: #1e3a5f;
+  outline: none;
+  background-color: #ffffff;
+}
+
+/* --- Textarea --- */
+
+textarea {
+  width: 100%;
+  padding: 0.6rem 0.85rem;
+  border: 1.5px solid #e2e7ef;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  color: #1a1a2e;
+  background-color: #f8f9fb;
+  resize: vertical;
+  transition: border-color 0.2s ease;
+}
+
+textarea:focus {
+  border-color: #1e3a5f;
+  outline: none;
+  background-color: #ffffff;
+}
+
+/* --- Submit button --- */
+
+input[type="submit"] {
+  background-color: #f5c518;
+  color: #1e3a5f;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #d4a800;
+}
+
+/* --- Ordered list in what happens next section --- */
+
+section ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+section ol li {
+  color: #5a6478;
+  line-height: 1.7;
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
+/* ============================================================
+   Enquiry Page - Responsive (Mobile)
+   ============================================================ */
+
+@media (max-width: 480px) {
+  fieldset {
+    padding: 1rem;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+  }
 }
